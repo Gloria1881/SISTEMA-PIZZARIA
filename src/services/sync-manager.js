@@ -120,7 +120,7 @@ class SyncManager {
     };
 
     // Importar API dinamicamente para evitar dependência circular
-    const api = (await import('../services/service-api')).default;
+    const api = (await import('./service-api')).default;
 
     for (const pedido of queue) {
       try {
